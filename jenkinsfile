@@ -1,0 +1,19 @@
+pipeline {
+	agent any
+	tools{
+		maven 'Maven3.8.3'
+	}
+	stages{
+		stage('Automation_101') {
+			steps {
+				echo "Starting"
+			}
+		}
+		stage('Build') {
+			steps{
+				git 'https://github.com/sinhaa-aankit/MavenSelenium-Automation.git'
+				sh './mvn clean compile'
+			}
+		}
+	}
+}
