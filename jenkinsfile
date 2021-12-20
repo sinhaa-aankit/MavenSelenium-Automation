@@ -11,7 +11,7 @@ pipeline {
 		}
 		stage('Build') {
 			steps{
-				git branch: 'main', url: 'https://github.com/sinhaa-aankit/MavenSelenium-Automation/blob/main/src/main/java/automationTesting/automation/App.java'
+				git branch: '', url: 'https://github.com/sinhaa-aankit/MavenSelenium-Automation.git'
 				sh 'mvn clean compile'
 			}
 		}
