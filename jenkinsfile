@@ -9,11 +9,11 @@ pipeline {
 				echo 'Starting'
 			}
 		}
-		stage('Build') {
-			steps{
-				git branch: 'main', url: 'https://github.com/sinhaa-aankit/MavenSelenium-Automation.git'
-				sh './mvn clean compile'
-			}
-		}
+		// stage('Build') {
+		// 	steps{
+		// 		git branch: 'main', url: 'https://github.com/sinhaa-aankit/MavenSelenium-Automation.git'
+		// 		sh './mvn clean compile'
+		// 	}
+		// }
 	}
 }
