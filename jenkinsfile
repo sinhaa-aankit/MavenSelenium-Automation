@@ -12,7 +12,7 @@ pipeline {
 		stage('Build') {
 			steps{
 				git 'https://github.com/sinhaa-aankit/MavenSelenium-Automation.git'
-				sh './mvnw clean compile'
+				sh 'mvn clean compile'
 			}
 		}
 	}
