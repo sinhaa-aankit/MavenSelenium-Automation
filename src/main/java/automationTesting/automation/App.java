@@ -78,12 +78,11 @@ public class App {
 		//
 		List<WebElement> ele = chromeDriver.findElements(By.cssSelector(".row.CQXY4c._3T4CNT"));
         for(int j=0;j<ele.size();j++) {
-            String listOfValues = ele.get(j).getText();
-            if(listOfValues.contains("Weight")) {
-            	System.out.println(listOfValues);
-            }
-        }
-        
+			String listOfValues = ele.get(j).getText();
+			if (listOfValues.contains("Weight")) {
+				System.out.println(listOfValues);
+			}
+		}
 //		for(int i=0; i<66; i++) System.out.println(brands.get(i).getText());
 //		chromeDriver.findElement(By.xpath("//*[@id=\"fk-compare-page\"]/div/div/div/div[1]/div[2]/div/div[2]/div[1]/div/div[2]/div[2]/div/div[27]")).click();
 //		chromeDriver.findElements(By.cssSelector(".vd8GqM")).get(0).click();
